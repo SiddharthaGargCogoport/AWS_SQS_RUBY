@@ -1,0 +1,1 @@
+Rails.application.config.sqs_queue_url = 'https://sqs.us-east-1.amazonaws.com/644293020023/test-queue'
