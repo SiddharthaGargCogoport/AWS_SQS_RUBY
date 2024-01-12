@@ -1,0 +1,513 @@
+Started GET "/publish_message" for 0:0:0:0:0:0:0:1 at 2024-01-12 14:05:33 +0530
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/publish_message"):
+  
+Error occurred while parsing request parameters.
+Contents:
+
+{
+ "name": "John Doe",
+ "age": 25,
+ "height": 1.75,
+ "is_student": true,
+ "grades": [90, 85, 92, 88],
+ "address": {
+ "street": "123 Main St",
+ "city": "Anytown",
+ "zipcode": "12345"
+ },
+ "birth_date": "1999-05-15",
+ "is_employed": true,
+ "salary": 55000.50,
+ "skills": ["programming", "communication", "problem-solving"],
+ "achievements": {
+ "certifications": ["AWS Certified Developer", "CompTIA Secur
+ "awards": {
+ "employee_of_the_month": true,
+ "innovation_award": false
+ }
+ }
+Started POST "/publish_message" for 0:0:0:0:0:0:0:1 at 2024-01-12 14:07:20 +0530
+Error occurred while parsing request parameters.
+Contents:
+
+{
+ "name": "John Doe",
+ "age": 25,
+ "height": 1.75,
+ "is_student": true,
+ "grades": [90, 85, 92, 88],
+ "address": {
+ "street": "123 Main St",
+ "city": "Anytown",
+ "zipcode": "12345"
+ },
+ "birth_date": "1999-05-15",
+ "is_employed": true,
+ "salary": 55000.50,
+ "skills": ["programming", "communication", "problem-solving"],
+ "achievements": {
+ "certifications": ["AWS Certified Developer", "CompTIA Secur
+ "awards": {
+ "employee_of_the_month": true,
+ "innovation_award": false
+ }
+ }
+Processing by CipherDispatcherController#publish_message as */*
+Completed 200 OK in 2137ms (Views: 7.1ms | Allocations: 0)
+
+
+Started POST "/publish_message" for 0:0:0:0:0:0:0:1 at 2024-01-12 14:09:20 +0530
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Error occurred while parsing request parameters.
+Contents:
+
+{
+ "name": "John Doe",
+ "age": 25,
+ "height": 1.75,
+ "is_student": true,
+ "grades": [90, 85, 92, 88],
+ "address": {
+ "street": "123 Main St",
+ "city": "Anytown",
+ "zipcode": "12345"
+ },
+ "birth_date": "1999-05-15",
+ "is_employed": true,
+ "salary": 55000.50,
+ "skills": ["programming", "communication", "problem-solving"],
+ "achievements": {
+ "certifications": ["AWS Certified Developer", "CompTIA Secur
+ "awards": {
+ "employee_of_the_month": true,
+ "innovation_award": false
+ }
+ }
+Processing by CipherDispatcherController#publish_message as */*
+Completed 200 OK in 1768ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 0)
+
+
+Started POST "/publish_message" for 0:0:0:0:0:0:0:1 at 2024-01-12 14:11:35 +0530
+  [1m[35m (4.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Error occurred while parsing request parameters.
+Contents:
+
+{
+ "name": "John Doe",
+ "age": 25,
+ "height": 1.75,
+ "is_student": true,
+ "grades": [90, 85, 92, 88],
+ "address": {
+ "street": "123 Main St",
+ "city": "Anytown",
+ "zipcode": "12345"
+ },
+ "birth_date": "1999-05-15",
+ "is_employed": true,
+ "salary": 55000.50,
+ "skills": ["programming", "communication", "problem-solving"],
+ "achievements": {
+ "certifications": ["AWS Certified Developer", "CompTIA Secur
+ "awards": {
+ "employee_of_the_month": true,
+ "innovation_award": false
+ }
+ }
+Processing by CipherDispatcherController#publish_message as */*
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.0ms | Allocations: 0)
+
+
+  
+JSON::ParserError (unexpected token at '"CompTIA Secur
+ "awards": {
+ "employee_of_the_month": true,
+ "innovation_award": false
+ }
+ }'):
+  
+actionpack (6.1.7.6) lib/action_controller/metal/rescue.rb:25:in `process_action'
+actionpack (6.1.7.6) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.7.6) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.7.6) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.7.6) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.7.6) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.7.6) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.7.6) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.7.6) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.7.6) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.7.6) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.7.6) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.7.6) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.7.6) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.7.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+org/jruby/RubyArray.java:1865:in `each'
+actionpack (6.1.7.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.7.6) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+activerecord (6.1.7.6) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.7.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+org/jruby/RubyKernel.java:1237:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.7.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.7.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.7.6) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.7.6) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.7.6) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.7.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.7.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.7.6) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.4) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.7) lib/rack/proxy.rb:87:in `call'
+railties (6.1.7.6) lib/rails/engine.rb:539:in `call'
+puma-5.6.8 (java) lib/puma/configuration.rb:252:in `call'
+puma-5.6.8 (java) lib/puma/request.rb:77:in `block in handle_request'
+puma-5.6.8 (java) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma-5.6.8 (java) lib/puma/request.rb:76:in `handle_request'
+puma-5.6.8 (java) lib/puma/server.rb:443:in `process_client'
+puma-5.6.8 (java) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/infinity/queue_poller1" for 0:0:0:0:0:0:0:1 at 2024-01-12 14:17:42 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/infinity/queue_poller1"):
+  
+Started GET "/infinity/queue_poller_1" for 0:0:0:0:0:0:0:1 at 2024-01-12 14:17:56 +0530
+  
+NameError (uninitialized constant AppplicationController):
+  
+app/controllers/infinity_interceptor_controller.rb:1:in `<main>'
+Started GET "/infinity/queue_poller_1" for 0:0:0:0:0:0:0:1 at 2024-01-12 14:29:15 +0530
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by InfinityInterceptorController#receiver1 as */*
+Completed 500 Internal Server Error in 189ms (ActiveRecord: 0.0ms | Allocations: 0)
+
+
+  
+ArgumentError (invalid option :wait_time_second):
+  
+app/controllers/infinity_interceptor_controller.rb:29:in `poll_queue'
+app/controllers/infinity_interceptor_controller.rb:18:in `block in receiver1'
+app/controllers/infinity_interceptor_controller.rb:17:in `receiver1'
+Started GET "/infinity/queue_poller_1" for 0:0:0:0:0:0:0:1 at 2024-01-12 14:31:31 +0530
+Processing by InfinityInterceptorController#receiver1 as */*
+Completed 500 Internal Server Error in 2474ms (Allocations: 0)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x2e8cd5f>
+Did you mean?  try):
+  
+app/controllers/infinity_interceptor_controller.rb:31:in `block in poll_queue'
+app/controllers/infinity_interceptor_controller.rb:29:in `poll_queue'
+app/controllers/infinity_interceptor_controller.rb:18:in `block in receiver1'
+app/controllers/infinity_interceptor_controller.rb:17:in `receiver1'
+Started GET "/infinity/queue_poller_1" for 0:0:0:0:0:0:0:1 at 2024-01-12 14:33:32 +0530
+  [1m[35m (4.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by InfinityInterceptorController#receiver1 as */*
+Started POST "/cipher/publish_message" for 0:0:0:0:0:0:0:1 at 2024-01-12 14:55:46 +0530
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CipherDispatcherController#publish_message as */*
+  Parameters: {"name"=>"John Nash", "age"=>29, "height"=>1.75, "is_student"=>true, "grades"=>[90, 85, 92, 88], "address"=>{"street"=>"123 Main St", "city"=>"Anytown", "zipcode"=>"12345"}, "birth_date"=>"1999-05-15", "is_employed"=>true, "salary"=>55000.5, "skills"=>["programming", "communication", "problem-solving"], "achievements"=>{"certifications"=>["AWS Certified Developer", "CompTIA Secur"], "awards"=>{"employee_of_the_month"=>true, "innovation_award"=>false}}, "cipher_dispatcher"=>{"name"=>"John Nash", "age"=>29, "height"=>1.75, "is_student"=>true, "grades"=>[90, 85, 92, 88], "address"=>{"street"=>"123 Main St", "city"=>"Anytown", "zipcode"=>"12345"}, "birth_date"=>"1999-05-15", "is_employed"=>true, "salary"=>55000.5, "skills"=>["programming", "communication", "problem-solving"], "achievements"=>{"certifications"=>["AWS Certified Developer", "CompTIA Secur"], "awards"=>{"employee_of_the_month"=>true, "innovation_award"=>false}}}}
+Completed 200 OK in 153ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 0)
+
+
+Started GET "/infinity/queue_poller_1" for 0:0:0:0:0:0:0:1 at 2024-01-12 14:56:33 +0530
+Processing by InfinityInterceptorController#receiver1 as */*
+Started POST "/cipher/publish_message" for 0:0:0:0:0:0:0:1 at 2024-01-12 15:12:34 +0530
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CipherDispatcherController#publish_message as */*
+  Parameters: {"name"=>"John Nash", "age"=>29, "height"=>1.75, "is_student"=>true, "grades"=>[90, 85, 92, 88], "address"=>{"street"=>"123 Main St", "city"=>"Anytown", "zipcode"=>"12345"}, "birth_date"=>"1999-05-15", "is_employed"=>true, "salary"=>55000.5, "skills"=>["programming", "communication", "problem-solving"], "achievements"=>{"certifications"=>["AWS Certified Developer", "CompTIA Secur"], "awards"=>{"employee_of_the_month"=>true, "innovation_award"=>false}}, "cipher_dispatcher"=>{"name"=>"John Nash", "age"=>29, "height"=>1.75, "is_student"=>true, "grades"=>[90, 85, 92, 88], "address"=>{"street"=>"123 Main St", "city"=>"Anytown", "zipcode"=>"12345"}, "birth_date"=>"1999-05-15", "is_employed"=>true, "salary"=>55000.5, "skills"=>["programming", "communication", "problem-solving"], "achievements"=>{"certifications"=>["AWS Certified Developer", "CompTIA Secur"], "awards"=>{"employee_of_the_month"=>true, "innovation_award"=>false}}}}
+Completed 200 OK in 245ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 0)
+
+
+Started POST "/cipher/publish_message" for 0:0:0:0:0:0:0:1 at 2024-01-12 15:12:49 +0530
+Processing by CipherDispatcherController#publish_message as */*
+  Parameters: {"name"=>"Sid Garg", "age"=>29, "height"=>1.75, "is_student"=>true, "grades"=>[90, 85, 92, 88], "address"=>{"street"=>"123 Main St", "city"=>"Anytown", "zipcode"=>"12345"}, "birth_date"=>"1999-05-15", "is_employed"=>true, "salary"=>55000.5, "skills"=>["programming", "communication", "problem-solving"], "achievements"=>{"certifications"=>["AWS Certified Developer", "CompTIA Secur"], "awards"=>{"employee_of_the_month"=>true, "innovation_award"=>false}}, "cipher_dispatcher"=>{"name"=>"Sid Garg", "age"=>29, "height"=>1.75, "is_student"=>true, "grades"=>[90, 85, 92, 88], "address"=>{"street"=>"123 Main St", "city"=>"Anytown", "zipcode"=>"12345"}, "birth_date"=>"1999-05-15", "is_employed"=>true, "salary"=>55000.5, "skills"=>["programming", "communication", "problem-solving"], "achievements"=>{"certifications"=>["AWS Certified Developer", "CompTIA Secur"], "awards"=>{"employee_of_the_month"=>true, "innovation_award"=>false}}}}
+Completed 200 OK in 30ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 0)
+
+
+Started GET "/infinity/queue_poller_1" for 0:0:0:0:0:0:0:1 at 2024-01-12 15:13:05 +0530
+Processing by InfinityInterceptorController#receiver1 as */*
+Completed 500 Internal Server Error in 93542ms (ActiveRecord: 0.0ms | Allocations: 0)
+
+
+  
+NoMethodError (undefined method `errors' for #<InfinityInterceptorController:0x00000000002838>):
+  
+app/controllers/infinity_interceptor_controller.rb:45:in `block in poll_queue'
+app/controllers/infinity_interceptor_controller.rb:33:in `poll_queue'
+app/controllers/infinity_interceptor_controller.rb:18:in `block in receiver1'
+app/controllers/infinity_interceptor_controller.rb:17:in `receiver1'
+Started POST "/cipher/publish_message" for 0:0:0:0:0:0:0:1 at 2024-01-12 15:17:06 +0530
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CipherDispatcherController#publish_message as */*
+  Parameters: {"name"=>"Sid Garg", "age"=>29, "height"=>1.75, "is_student"=>true, "grades"=>[90, 85, 92, 88], "address"=>{"street"=>"123 Main St", "city"=>"Anytown", "zipcode"=>"12345"}, "birth_date"=>"1999-05-15", "is_employed"=>true, "salary"=>55000.5, "skills"=>["programming", "communication", "problem-solving"], "achievements"=>{"certifications"=>["AWS Certified Developer", "CompTIA Secur"], "awards"=>{"employee_of_the_month"=>true, "innovation_award"=>false}}, "cipher_dispatcher"=>{"name"=>"Sid Garg", "age"=>29, "height"=>1.75, "is_student"=>true, "grades"=>[90, 85, 92, 88], "address"=>{"street"=>"123 Main St", "city"=>"Anytown", "zipcode"=>"12345"}, "birth_date"=>"1999-05-15", "is_employed"=>true, "salary"=>55000.5, "skills"=>["programming", "communication", "problem-solving"], "achievements"=>{"certifications"=>["AWS Certified Developer", "CompTIA Secur"], "awards"=>{"employee_of_the_month"=>true, "innovation_award"=>false}}}}
+Completed 200 OK in 144ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 0)
+
+
+Started POST "/cipher/publish_message" for 0:0:0:0:0:0:0:1 at 2024-01-12 15:21:36 +0530
+  [1m[35m (11.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CipherDispatcherController#publish_message as */*
+  Parameters: {"name"=>"Sid Garg", "age"=>29, "height"=>1.75, "is_student"=>true, "grades"=>[90, 85, 92, 88], "address"=>{"street"=>"123 Main St", "city"=>"Anytown", "zipcode"=>"12345"}, "birth_date"=>"1999-05-15", "is_employed"=>true, "salary"=>55000.5, "skills"=>["programming", "communication", "problem-solving"], "achievements"=>{"certifications"=>["AWS Certified Developer", "CompTIA Secur"], "awards"=>{"employee_of_the_month"=>true, "innovation_award"=>false}}, "cipher_dispatcher"=>{"name"=>"Sid Garg", "age"=>29, "height"=>1.75, "is_student"=>true, "grades"=>[90, 85, 92, 88], "address"=>{"street"=>"123 Main St", "city"=>"Anytown", "zipcode"=>"12345"}, "birth_date"=>"1999-05-15", "is_employed"=>true, "salary"=>55000.5, "skills"=>["programming", "communication", "problem-solving"], "achievements"=>{"certifications"=>["AWS Certified Developer", "CompTIA Secur"], "awards"=>{"employee_of_the_month"=>true, "innovation_award"=>false}}}}
+Completed 200 OK in 325ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 0)
+
+
+Started POST "/cipher/publish_message" for 0:0:0:0:0:0:0:1 at 2024-01-12 15:24:53 +0530
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CipherDispatcherController#publish_message as */*
+  Parameters: {"name"=>"Sid Garg", "age"=>29, "height"=>1.75, "is_student"=>true, "grades"=>[90, 85, 92, 88], "address"=>{"street"=>"123 Main St", "city"=>"Anytown", "zipcode"=>"12345"}, "birth_date"=>"1999-05-15", "is_employed"=>true, "salary"=>55000.5, "skills"=>["programming", "communication", "problem-solving"], "achievements"=>{"certifications"=>["AWS Certified Developer", "CompTIA Secur"], "awards"=>{"employee_of_the_month"=>true, "innovation_award"=>false}}, "cipher_dispatcher"=>{"name"=>"Sid Garg", "age"=>29, "height"=>1.75, "is_student"=>true, "grades"=>[90, 85, 92, 88], "address"=>{"street"=>"123 Main St", "city"=>"Anytown", "zipcode"=>"12345"}, "birth_date"=>"1999-05-15", "is_employed"=>true, "salary"=>55000.5, "skills"=>["programming", "communication", "problem-solving"], "achievements"=>{"certifications"=>["AWS Certified Developer", "CompTIA Secur"], "awards"=>{"employee_of_the_month"=>true, "innovation_award"=>false}}}}
+Completed 200 OK in 2062ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 0)
+
+
+Started POST "/cipher/publish_message" for 0:0:0:0:0:0:0:1 at 2024-01-12 15:25:15 +0530
+Processing by CipherDispatcherController#publish_message as */*
+  Parameters: {"name"=>"Smeeksha Garg", "age"=>32, "height"=>1.75, "is_student"=>false, "grades"=>[90, 85, 92, 88], "address"=>{"street"=>"123 Main St", "city"=>"Anytown", "zipcode"=>"12345"}, "birth_date"=>"1999-05-15", "is_employed"=>true, "salary"=>55000.5, "skills"=>["programming", "communication", "problem-solving"], "achievements"=>{"certifications"=>["AWS Certified Developer", "CompTIA Secur"], "awards"=>{"employee_of_the_month"=>true, "innovation_award"=>false}}, "cipher_dispatcher"=>{"name"=>"Smeeksha Garg", "age"=>32, "height"=>1.75, "is_student"=>false, "grades"=>[90, 85, 92, 88], "address"=>{"street"=>"123 Main St", "city"=>"Anytown", "zipcode"=>"12345"}, "birth_date"=>"1999-05-15", "is_employed"=>true, "salary"=>55000.5, "skills"=>["programming", "communication", "problem-solving"], "achievements"=>{"certifications"=>["AWS Certified Developer", "CompTIA Secur"], "awards"=>{"employee_of_the_month"=>true, "innovation_award"=>false}}}}
+Completed 200 OK in 1264ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 0)
+
+
+Started GET "/infinity/queue_poller_1" for 0:0:0:0:0:0:0:1 at 2024-01-12 15:25:24 +0530
+Processing by InfinityInterceptorController#receiver1 as */*
+{
+ "name": "Sid Garg",
+ "age": 29,
+ "height": 1.75,
+ "is_student": true,
+ "grades": [90, 85, 92, 88],
+ "address": {
+ "street": "123 Main St",
+ "city": "Anytown",
+ "zipcode": "12345"
+ },
+ "birth_date": "1999-05-15",
+ "is_employed": true,
+ "salary": 55000.50,
+ "skills": ["programming", "communication", "problem-solving"],
+ "achievements": {
+ "certifications": ["AWS Certified Developer", "CompTIA Secur"],
+ "awards": {
+ "employee_of_the_month": true,
+ "innovation_award": false
+ }
+ }
+}
+{
+ "name": "Sid Garg",
+ "age": 29,
+ "height": 1.75,
+ "is_student": true,
+ "grades": [90, 85, 92, 88],
+ "address": {
+ "street": "123 Main St",
+ "city": "Anytown",
+ "zipcode": "12345"
+ },
+ "birth_date": "1999-05-15",
+ "is_employed": true,
+ "salary": 55000.50,
+ "skills": ["programming", "communication", "problem-solving"],
+ "achievements": {
+ "certifications": ["AWS Certified Developer", "CompTIA Secur"],
+ "awards": {
+ "employee_of_the_month": true,
+ "innovation_award": false
+ }
+ }
+}
+Completed 500 Internal Server Error in 133488ms (ActiveRecord: 0.0ms | Allocations: 0)
+
+
+  
+NoMethodError (undefined method `response' for #<NameError:0x24363c7d>
+Did you mean?  respond_to?):
+  
+app/controllers/infinity_interceptor_controller.rb:45:in `block in poll_queue'
+app/controllers/infinity_interceptor_controller.rb:34:in `poll_queue'
+app/controllers/infinity_interceptor_controller.rb:18:in `block in receiver1'
+app/controllers/infinity_interceptor_controller.rb:17:in `receiver1'
+Started GET "/infinity/queue_poller_1" for 0:0:0:0:0:0:0:1 at 2024-01-12 15:32:33 +0530
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by InfinityInterceptorController#receiver1 as */*
+{
+ "name": "Smeeksha Garg",
+ "age": 32,
+ "height": 1.75,
+ "is_student": false,
+ "grades": [90, 85, 92, 88],
+ "address": {
+ "street": "123 Main St",
+ "city": "Anytown",
+ "zipcode": "12345"
+ },
+ "birth_date": "1999-05-15",
+ "is_employed": true,
+ "salary": 55000.50,
+ "skills": ["programming", "communication", "problem-solving"],
+ "achievements": {
+ "certifications": ["AWS Certified Developer", "CompTIA Secur"],
+ "awards": {
+ "employee_of_the_month": true,
+ "innovation_award": false
+ }
+ }
+}
+{
+ "name": "Smeeksha Garg",
+ "age": 32,
+ "height": 1.75,
+ "is_student": false,
+ "grades": [90, 85, 92, 88],
+ "address": {
+ "street": "123 Main St",
+ "city": "Anytown",
+ "zipcode": "12345"
+ },
+ "birth_date": "1999-05-15",
+ "is_employed": true,
+ "salary": 55000.50,
+ "skills": ["programming", "communication", "problem-solving"],
+ "achievements": {
+ "certifications": ["AWS Certified Developer", "CompTIA Secur"],
+ "awards": {
+ "employee_of_the_month": true,
+ "innovation_award": false
+ }
+ }
+}
+Message deletion failed
+{
+ "name": "Smeeksha Garg",
+ "age": 32,
+ "height": 1.75,
+ "is_student": false,
+ "grades": [90, 85, 92, 88],
+ "address": {
+ "street": "123 Main St",
+ "city": "Anytown",
+ "zipcode": "12345"
+ },
+ "birth_date": "1999-05-15",
+ "is_employed": true,
+ "salary": 55000.50,
+ "skills": ["programming", "communication", "problem-solving"],
+ "achievements": {
+ "certifications": ["AWS Certified Developer", "CompTIA Secur"],
+ "awards": {
+ "employee_of_the_month": true,
+ "innovation_award": false
+ }
+ }
+}
+{
+ "name": "Smeeksha Garg",
+ "age": 32,
+ "height": 1.75,
+ "is_student": false,
+ "grades": [90, 85, 92, 88],
+ "address": {
+ "street": "123 Main St",
+ "city": "Anytown",
+ "zipcode": "12345"
+ },
+ "birth_date": "1999-05-15",
+ "is_employed": true,
+ "salary": 55000.50,
+ "skills": ["programming", "communication", "problem-solving"],
+ "achievements": {
+ "certifications": ["AWS Certified Developer", "CompTIA Secur"],
+ "awards": {
+ "employee_of_the_month": true,
+ "innovation_award": false
+ }
+ }
+}
+Message deletion failed
+Started POST "/cipher/publish_message" for 0:0:0:0:0:0:0:1 at 2024-01-12 15:38:42 +0530
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CipherDispatcherController#publish_message as */*
+  Parameters: {"name"=>"Himanshu Garg", "age"=>39, "height"=>1.75, "is_student"=>false, "grades"=>[90, 85, 92, 88], "address"=>{"street"=>"123 Main St", "city"=>"Anytown", "zipcode"=>"12345"}, "birth_date"=>"1999-05-15", "is_employed"=>true, "salary"=>55000.5, "skills"=>["programming", "communication", "problem-solving"], "achievements"=>{"certifications"=>["AWS Certified Developer", "CompTIA Secur"], "awards"=>{"employee_of_the_month"=>true, "innovation_award"=>false}}, "cipher_dispatcher"=>{"name"=>"Himanshu Garg", "age"=>39, "height"=>1.75, "is_student"=>false, "grades"=>[90, 85, 92, 88], "address"=>{"street"=>"123 Main St", "city"=>"Anytown", "zipcode"=>"12345"}, "birth_date"=>"1999-05-15", "is_employed"=>true, "salary"=>55000.5, "skills"=>["programming", "communication", "problem-solving"], "achievements"=>{"certifications"=>["AWS Certified Developer", "CompTIA Secur"], "awards"=>{"employee_of_the_month"=>true, "innovation_award"=>false}}}}
+Completed 200 OK in 1839ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 0)
+
+
+Started GET "/infinity/queue_poller_2" for 0:0:0:0:0:0:0:1 at 2024-01-12 15:38:58 +0530
+Processing by InfinityInterceptorController#receiver2 as */*
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 0)
+
+
+  
+RuntimeError (Failed to Process request):
+  
+app/controllers/infinity_interceptor_controller.rb:5:in `receiver2'
+Started GET "/infinity/queue_poller_2" for 0:0:0:0:0:0:0:1 at 2024-01-12 15:40:02 +0530
+Processing by InfinityInterceptorController#receiver2 as */*
+{
+ "name": "Smeeksha Garg",
+ "age": 32,
+ "height": 1.75,
+ "is_student": false,
+ "grades": [90, 85, 92, 88],
+ "address": {
+ "street": "123 Main St",
+ "city": "Anytown",
+ "zipcode": "12345"
+ },
+ "birth_date": "1999-05-15",
+ "is_employed": true,
+ "salary": 55000.50,
+ "skills": ["programming", "communication", "problem-solving"],
+ "achievements": {
+ "certifications": ["AWS Certified Developer", "CompTIA Secur"],
+ "awards": {
+ "employee_of_the_month": true,
+ "innovation_award": false
+ }
+ }
+}
+{
+ "name": "Himanshu Garg",
+ "age": 39,
+ "height": 1.75,
+ "is_student": false,
+ "grades": [90, 85, 92, 88],
+ "address": {
+ "street": "123 Main St",
+ "city": "Anytown",
+ "zipcode": "12345"
+ },
+ "birth_date": "1999-05-15",
+ "is_employed": true,
+ "salary": 55000.50,
+ "skills": ["programming", "communication", "problem-solving"],
+ "achievements": {
+ "certifications": ["AWS Certified Developer", "CompTIA Secur"],
+ "awards": {
+ "employee_of_the_month": true,
+ "innovation_award": false
+ }
+ }
+}
